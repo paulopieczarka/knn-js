@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>KNN by Paulo Pieczarka</title>
+	<style>
+	html { background:#EEE; height:100%; }
+
+		body {
+			width:800px;
+			min-height:calc(100% - 40px);
+			margin:0 auto;
+			padding:20px;
+			background:white;
+		}
+
+		#canvas {
+			margin-left:50%;
+			transform:translateX(-50%);
+			border-radius:2px;
+			overflow:hidden;
+			background:black;
+		}
+	</style>
+</head>
+<body>
+
+<div id="body">
+	<canvas id="canvas" width="640" height="480"></canvas>
+	<h1>Como executar</h1>
+	<p>Para executar abra o DevConsole <b><code>(F12)</code></b>.</p>
+	<p>1. No console digite: <code>KNN.run()</code> (protótipo de teste.)</p>
+	<p>2. No console digite: <code>KNN.run({x:F, y:F})</code> (protótipo qualquer.)<br><i>F* float entre [0, 1].</i></p>
+	<p><code><b> --- Esperado: </b> a classificação do protótipo passado.</code></p>
+
+	<h2>By</h2>
+	<p><code>Desenvolvido por Paulo Pieczarka utilizando ES6 e Underscore.</p>
+	<p><i>Nota: </i> baseado em http://16cards.com/2013/06/06/knn-in-parse-cloud</code></p>
+</div>
+
+</body>
+</html>
+
+<script src="ext/underscore-min.js"></script>
+<script src="dataset.js"></script>
+<script src="main.js"></script>
